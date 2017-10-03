@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>Video Website</title>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<link id="style1" rel="stylesheet" type="text/css" href="./css/day.css">
+		
+
+		<!-- Fancy Box stuff -->
+
+		<link  href="./fancybox-master/dist/jquery.fancybox.min.css" rel="stylesheet">
+		<script src="./fancybox-master/dist/jquery.fancybox.min.js"></script>
+		<!-- <script type="text/javascript" src="fancybox-master/dist/jquery.easing-1.3.pack.js"></script> -->
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$(document).ready(function() {
+					$(".fancyImg").fancybox();
+				});
+			})
+		</script>
+
+	</head>
+
+	<body>
+
+		<script type="text/javascript">
+		function toggle() {
+		    var el = document.getElementById("style1");
+		    if (el.href.match("./css/day.css")) {
+		        el.href = "./css/night.css";    
+		    }
+		    else {
+		        el.href = "./css/day.css";  
+		    }
+		}
+		</script>
+
+	
+		<nav class="navBar">
+			
+			
+			<ul class="navBarUl">
+				<li class="NavLi"><a href=""><img class="logo" src="./imgs/logoPlaceHolder.png"></a></li>
+				<li class="NavLi" style="float:right;"><a class="navLinks" href=""><h4>Contact</h4></a></li>
+				<li class="NavLi" style="float:right;"><a class="navLinks" href=""><h4>Favorites</h4></a></li>
+				<li class="NavLi" style="float:right;"><a class="navLinks" href=""><h4>Home</h4></a></li>
+			</ul>
+		</nav>
+
+		<!-- <div class="contanier">
+			<ul class="videoUl">
+					<li class="videoLi"><iframe src="https://www.youtube.com/embed/MXTd8xd_f8s"></iframe></li>
+					<li class="videoLi"><iframe src="https://www.youtube.com/embed/MXTd8xd_f8s"></iframe></li>
+					<li class="videoLi"><iframe src="https://www.youtube.com/embed/MXTd8xd_f8s"></iframe></li>
+					<li class="videoLi"><iframe src="https://www.youtube.com/embed/MXTd8xd_f8s"></iframe></li>
+				
+			</ul>
+		</div> -->
+
+		<div>
+			<script type="text/javascript">
+				var col1 = ["https://www.youtube.com/embed/MXTd8xd_f8s", "Julie Flygare: Narcolepsy", "https://www.youtube.com/embed/MXTd8xd_f8s", "Julie Flygare: Narcolepsy", "https://www.youtube.com/embed/MXTd8xd_f8s", "Julie Flygare: Narcolepsy", "https://www.youtube.com/embed/MXTd8xd_f8s", "Julie Flygare: Narcolepsy"];
+
+				var col2 = ["https://www.youtube.com/embed/MXTd8xd_f8s", "Julie Flygare: Narcolepsy", "https://www.youtube.com/embed/MXTd8xd_f8s", "Julie Flygare: Narcolepsy", "https://www.youtube.com/embed/MXTd8xd_f8s", "Julie Flygare: Narcolepsy", "https://www.youtube.com/embed/MXTd8xd_f8s", "Julie Flygare: Narcolepsy"];
+
+				var col3 = ["https://www.youtube.com/embed/MXTd8xd_f8s", "Julie Flygare: Narcolepsy", "https://www.youtube.com/embed/MXTd8xd_f8s", "Julie Flygare: Narcolepsy", "https://www.youtube.com/embed/MXTd8xd_f8s", "Julie Flygare: Narcolepsy", "https://www.youtube.com/embed/MXTd8xd_f8s", "Julie Flygare: Narcolepsy"];
+
+				var col4 = ["https://www.youtube.com/embed/MXTd8xd_f8s", "Julie Flygare: Narcolepsy", "https://www.youtube.com/embed/MXTd8xd_f8s", "Julie Flygare: Narcolepsy", "https://www.youtube.com/embed/MXTd8xd_f8s", "Julie Flygare: Narcolepsy", "https://www.youtube.com/embed/MXTd8xd_f8s", "Julie Flygare: Narcolepsy"];
+
+				function createTable() {
+				    //To fill the table with javascript 
+				    
+				    for (var j = 0; j < col1.length; j++) {
+
+				        if (j % 2 == 0) {
+				            document.write("<tr><td><a data-fancybox data-type='iframe' data-src=" + col1[j] + "><iframe src=" + col2[j] + "></iframe></a></td>");
+				            document.write("<td><iframe src=" + col2[j] + "></iframe></td>");
+				            document.write("<td><iframe src=" + col3[j] + "></iframe></td>");
+				            document.write("<td><iframe src=" + col4[j] + "></iframe></td></tr>");
+				        } else {
+				            document.write("<tr><td class='videoTitle'><a data-fancybox data-caption='' data-fancybox data-type='iframe' data-src=" + col1[j-1] + ">" + col1[j] + "</a></td>");
+				            document.write("<td class='videoTitle'><a data-fancybox data-caption='' data-fancybox data-type='iframe' data-src=" + col2[j-1] + ">" + col2[j] + "</a></td>");
+				            document.write("<td class='videoTitle'><a data-fancybox data-caption='' data-fancybox data-type='iframe' data-src=" + col3[j-1] + ">" + col3[j] + "</a></td>");
+				            document.write("<td class='videoTitle'><a data-fancybox data-caption='' data-fancybox data-type='iframe' data-src=" + col4[j-1] + ">" + col4[j] + "</a></td></tr>");
+				        }
+				    }
+				}
+			</script>
+
+		<button type="button" class="btn btn-primary" onclick="toggle()">Switch</button>
+
+			<table align="center">
+				<!-- <tr>
+					<th>Balance</th>
+					<th>Fee</th>
+
+				</tr> -->
+				<script>createTable();</script>
+			</table>
+		</div>
+
+
+		<a data-fancybox="gallery" href="./imgs/largeTestImageForFancyBox.jpg" data-fancybox data-caption='My caption'>
+		    <img src="./imgs/smallTestImageForFancyBox.jpg">
+		</a>
+
+		<a data-fancybox data-type='iframe' data-src='https://www.youtube.com/embed/MXTd8xd_f8s'>
+		Webpage
+		</a>
+	
+	</body>
+
+	
+
+<script src="./main.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=init"></script>
+
+
+</html>
