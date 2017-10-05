@@ -157,9 +157,6 @@ td {
     
 }
 
-.videoTitle:hover {
-    text-decoration-line: none !important;
-}
 
 .videoSubTitle {
     color: #337ab7;
