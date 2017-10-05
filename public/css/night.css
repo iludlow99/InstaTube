@@ -7,18 +7,13 @@ h4 {
     margin: 0px;
 }
 
+h2 {
+     margin: 0px;
 }
 
-#override a {
-    /*color: inherit;*/
-}
-
-#override2 .videoTitle {
-    color: inherit;
-}
 
 /*===================Nav Bar======================*/
-.logo {
+.logoPlaceHolder {
     height: 50px;
     width: 100px;
     padding-left: 5px;
@@ -36,6 +31,17 @@ h4 {
     text-decoration: none;
 }
 
+.logo {
+    text-transform: none !important;
+    margin-top: 7px; 
+    margin-left: 5px;
+    color: #ededed; 
+}
+
+.logoColor {
+    color: #ad1f1f;
+}
+
 .NavLi {
     float: left;
     font-size: 0.9em;
@@ -47,7 +53,7 @@ h4 {
 .navLinks {
     display: block;
     text-align: center;
-    padding: 1.3em 0.7em 0.5em 0.7em;
+    padding: 1.6em 0.7em 0.8em 0.7em;
     /*text-decoration: none;*/
 }
 
@@ -80,7 +86,7 @@ input[type=checkbox]{
 }
 
 label {
-    margin: 10px;
+    margin: 15px 10px 15px 10px;
     cursor: pointer;
     text-indent: -9999px;
     width: 50px;
@@ -126,11 +132,11 @@ body {
 
 /*========================Video Grid=========================*/
 
-iframe {
-    border: none;
+.picture {
+    cursor: pointer;
     height: 150px;
     width: 200px;
-    text-align: center;
+    border-radius: 3px;
 }
 
 
@@ -148,7 +154,7 @@ td {
         padding: 2.5em 1.2em 0em 1.2em;
     }
 
-    iframe {
+    .picture {
         height: 200px;
         width: 250px;
     }
@@ -159,7 +165,7 @@ td {
 }
 
 @media (min-width: 1500px) {
-    iframe {
+    .picture {
         height: 250px;
         width: 300px;
     }
@@ -170,6 +176,7 @@ td {
 .videoTitle {
     color: #f96816 !important;
     padding-top: 0.5em !important;
+    cursor: pointer;
 }
 
 .videoLi {

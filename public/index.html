@@ -47,7 +47,7 @@
 			
 			
 			<ul class="navBarUl">
-				<li class="NavLi"><a href=""><img class="logo" src="./imgs/logoPlaceHolder.png"></a></li>
+				<li class="NavLi logo"><h2><strong class="logoColor">Med</strong>video</h2><a href=""><!-- <img class="logoPlaceHolder" src="./imgs/logoPlaceHolder.png"></a> --></li>
 				<li class="NavLi" style="float:right;"><input type="checkbox" id="switch" /><label for="switch" onclick="toggle()">Toggle</label></li>
 				<!-- <li class="NavLi" style="float:right;"><button type="button" class="btn btn-primary" onclick="toggle()">Switch</button></li> -->
 				<li class="NavLi" style="float:right;"><a class="navLinks" href=""><h4>Contact</h4></a></li>
@@ -62,11 +62,14 @@
 			<script type="text/javascript">
 
 				var videos = [
-						{ url: "https://www.youtube.com/embed/MXTd8xd_f8s", picture: "photo", title: "Julie"},
-						{ url: "https://www.youtube.com/embed/fNKfakkH8Yg", picture: "photo", title: "Leslie"},
-						{ url: "https://www.youtube.com/embed/D-ewhh6qM94", picture: "photo", title: "Julie"},
-						{ url: "https://www.youtube.com/embed/T3UYggHOeUg", picture: "photo", title: "Julie"},
-						{ url: "https://www.youtube.com/embed/T3UYggHOeUg", picture: "photo", title: "Julie"}
+
+					{ url: "https://www.youtube.com/embed/Z4zRJFQhDCo", picture: "https://i2.wp.com/medicinex.stanford.edu/wp-content/uploads/conference/cache/wide_4806.jpg", patient: "Devon Low", condition: "COPD"},
+					{ url: "https://www.youtube.com/embed/fRRGYHNt", picture: "https://i.ytimg.com/vi/MXTd8xd_f8s/maxresdefault.jpg", patient: "Julie Flygare", condition: "Narcolepsy"},
+					{ url: "https://www.youtube.com/embed/fNKfakkH8Yg", picture: "http://storytelling.healthcentral.com/encoded/56ac223a4ee9b1a6393515f0/image/62ac6fa3-efdd-40fc-875b-2fba99b96682_leslie_Rott_hero2.jpg", patient: "Leslie Rott", condition: "Lupus"},
+					{ url: "https://www.youtube.com/embed/aDv3_L7c0xo", picture: "https://i2.wp.com/medicinex.stanford.edu/wp-content/uploads/2014/02/nikki_estanol_1920_10801.jpg", patient: "Nicole Estanol", condition: "Juvenile Rheumatoid Arthritis"},
+					{ url: "https://www.youtube.com/embed/9NFfznRillE", picture: "https://i.ytimg.com/vi/9NFfznRillE/maxresdefault.jpg", patient: "Liza Bernstein", condition: "Breast Cancer"},
+					{ url: "https://www.youtube.com/embed/_Q8WjBj2j_s", picture: "http://cdn1.bostonmagazine.com/wp-content/uploads/2016/02/Amy-Reed-Hooman-Noorchashm-sm.jpg", patient: "Hooman Noorchashm", condition: "Leiomyosarcoma"},
+				
 				]
 
 
@@ -82,10 +85,15 @@
 						document.write("<tr>");
 						for (var i = 1; i <= numCols; i++){	
 							document.write("<td><table><tr>");
-							document.write("<td><iframe src=" + videos[n].url + "></iframe></td>");
-							document.write("<td class='videoTitle'> <a data-fancybox data-caption='' data-fancybox data-type='iframe' data-src=" + videos[n].url + ">" + videos[n].title + "</a></td>");
+							// document.write("<td><iframe src=" + videos[n].url + "></iframe></td>");
+							
+							document.write("<td><a data-fancybox data-type='iframe' data-src=" + videos[n].url + "><img class='picture' src=" + videos[n].picture + "></a></td>");
+
 							document.write("</tr><tr>");
-							document.write("<td class='videoTitle'><a data-fancybox data-caption='' data-fancybox data-type='iframe' data-src=" + videos[n].url + ">" + videos[n].title + "</a></td>");
+							document.write("<td class='videoTitle'><a data-fancybox data-type='iframe' data-src=" + videos[n].url + ">" + videos[n].patient + "</a></td>");
+
+							document.write("</tr><tr>");
+							document.write("<td class='videoTitle'><a data-fancybox data-type='iframe' data-src=" + videos[n].url + ">" + videos[n].condition + "</a></td>");
 							document.write("</tr></table></td>");
 							n = n + 1;
 						}
@@ -95,6 +103,10 @@
 
 
 
+/*<!-- 		<a data-fancybox='gallery' href='./imgs/largeTestImageForFancyBox.jpg' data-fancybox data-caption='My caption'>
+		    <img src='./imgs/smallTestImageForFancyBox.jpg'>
+		</a>
+	 -->*/
 					
 					
 						// document.write("<tr><td class='videoTitle'><a data-fancybox data-caption='' data-fancybox data-type='iframe' data-src=" + videos[i].url + ">" + videos[i].title + "</a></td></tr>");
@@ -152,10 +164,6 @@
 		</div>
 
 
-<!-- 		<a data-fancybox='gallery' href='./imgs/largeTestImageForFancyBox.jpg' data-fancybox data-caption='My caption'>
-		    <img src='./imgs/smallTestImageForFancyBox.jpg'>
-		</a>
-	 -->
 	</body>
 	
 
