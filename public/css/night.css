@@ -13,12 +13,11 @@ h2 {
 
 
 /*===================Nav Bar======================*/
-.logoPlaceHolder {
-    height: 50px;
-    width: 100px;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-bottom: 3px;
+.navBar {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
 }
 
 .navBarUl {
@@ -28,6 +27,7 @@ h2 {
     padding-right: 1.5%;
     overflow: hidden;
     background-color: #333333;
+    opacity: 0.93;
     text-decoration: none;
 }
 
@@ -159,6 +159,7 @@ td {
     color: #337ab7;
     padding-top: 0em !important;
     cursor: pointer;
+    border-top: solid #337ab7 2px;
 }
 
 @media (min-width: 1200px) {
