@@ -33,8 +33,8 @@ h2 {
 
 .logo {
     text-transform: none !important;
-    margin-top: 7px; 
-    margin-left: 5px;
+    margin-top: 10px; 
+    margin-left: 6px;
     color: #ededed; 
 }
 
@@ -149,6 +149,19 @@ td {
     text-align: center;
 }
 
+.videoTitle {
+    color: #f96816 !important;
+    padding-top: 0.5em !important;
+    cursor: pointer;
+}
+
+.videoSubTitle {
+    color: #337ab7;
+    padding-top: 0em !important;
+    cursor: pointer;
+    text-decoration-line: overline;
+}
+
 @media (min-width: 1200px) {
     td {
         padding: 2.5em 1.2em 0em 1.2em;
@@ -162,6 +175,10 @@ td {
     .videoTitle {
        font-size: 1.3em;
     }
+
+    .videoSubTitle {
+       font-size: 1.3em;
+    }
 }
 
 @media (min-width: 1500px) {
@@ -173,11 +190,6 @@ td {
 
 
 
-.videoTitle {
-    color: #f96816 !important;
-    padding-top: 0.5em !important;
-    cursor: pointer;
-}
 
 .videoLi {
     display: inline-block;

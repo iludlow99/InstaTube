@@ -150,6 +150,23 @@ td {
     text-align: center;
 }
 
+.videoTitle {
+    color: #337ab7;
+    padding-top: 0.5em !important;
+    cursor: pointer;
+    
+}
+
+.videoTitle:hover {
+    text-decoration-line: none !important;
+}
+
+.videoSubTitle {
+    color: #337ab7;
+    padding-top: 0em;
+    cursor: pointer;
+}
+
 @media (min-width: 1200px) {
     td {
         padding: 2.5em 1.2em 0em 1.2em;
@@ -163,6 +180,10 @@ td {
     .videoTitle {
        font-size: 1.3em;
     }
+
+    .videoSubTitle {
+       font-size: 1.3em;
+    }
 }
 
 @media (min-width: 1500px) {
@@ -174,11 +195,6 @@ td {
 
 
 
-.videoTitle {
-    color: #337ab7;
-    padding-top: 0.5em !important;
-    cursor: pointer;
-}
 
 .videoLi {
     display: inline-block;
