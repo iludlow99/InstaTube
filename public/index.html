@@ -46,10 +46,12 @@
 			<ul class="navBarUl">
 				<li class="NavLi logo"><h2><strong class="logoColor">Med</strong>video</h2><a href=""><!-- <img class="logoPlaceHolder" src="./imgs/logoPlaceHolder.png"></a> --></li>
 				<li class="NavLi" style="float:right;"><input type="checkbox" id="switch" /><label for="switch" onclick="toggle()">Toggle</label></li>
-				<!-- <li class="NavLi" style="float:right;"><button type="button" class="btn btn-primary" onclick="toggle()">Switch</button></li> -->
-				<li class="NavLi" style="float:right;"><a class="navLinks" href="contactPage.html"><h4>Contact</h4></a></li>
+				
+				<!-- <li class="NavLi" style="float:right;"><a class="navLinks" href="contactPage.html"><h4>Contact</h4></a></li> -->
+
 				<!-- <li class="NavLi" style="float:right;"><a class="navLinks" href=""><h4>Favorites</h4></a></li> -->
-				<li class="NavLi" style="float:right;"><a class="navLinks" href="index.html"><h4>Home</h4></a></li>
+				
+				<!-- <li class="NavLi" style="float:right;"><a class="navLinks" href="index.html"><h4>Home</h4></a></li> -->
 			</ul>
 		</nav>
 
@@ -61,8 +63,11 @@
 				var videos = [
 
 					{ url: "https://www.youtube.com/embed/MXTd8xd_f8s", picture: "https://i.ytimg.com/vi/MXTd8xd_f8s/maxresdefault.jpg", patient: "Julie Flygare", condition: "Narcolepsy"},
+
 					{ url: "https://www.youtube.com/embed/3HuxRDX0kbs", picture: "https://i.ytimg.com/vi/rZ-b1omWXH4/maxresdefault.jpg", patient: "Ryan Prior", condition: "Chronic Fatigue Syndrom"},
+
 					{ url: "https://www.youtube.com/embed/fNKfakkH8Yg", picture: "http://storytelling.healthcentral.com/encoded/56ac223a4ee9b1a6393515f0/image/62ac6fa3-efdd-40fc-875b-2fba99b96682_leslie_Rott_hero2.jpg", patient: "Leslie Rott", condition: "Lupus"},
+					
 					{ url: "https://www.youtube.com/embed/aDv3_L7c0xo", picture: "https://i2.wp.com/medicinex.stanford.edu/wp-content/uploads/2014/02/nikki_estanol_1920_10801.jpg", patient: "Nicole Estanol", condition: "Juvenile Rheumatoid Arthritis"},
 					{ url: "https://www.youtube.com/embed/9NFfznRillE", picture: "https://i.ytimg.com/vi/9NFfznRillE/maxresdefault.jpg", patient: "Liza Bernstein", condition: "Breast Cancer"},
 					{ url: "https://www.youtube.com/embed/Z4zRJFQhDCo", picture: "https://i2.wp.com/medicinex.stanford.edu/wp-content/uploads/conference/cache/wide_4806.jpg", patient: "Devon Low", condition: "COPD"},
@@ -92,13 +97,13 @@
 							document.write("<td><a data-fancybox data-type='iframe' data-src=" + videos[n].url + "><img class='picture' src=" + videos[n].picture + "></a></td>");
 
 							document.write("</tr><tr>");
-							document.write("<td class='videoTitle'><a data-fancybox data-type='iframe' data-src=" + videos[n].url + ">" + videos[n].patient + "</a></td>");
+							document.write("<td class='videoTitle'><p><a data-fancybox data-type='iframe' data-src=" + videos[n].url + ">" + videos[n].patient + "</a></p></td>");
 
 							// document.write("</tr><tr>");
 							// document.write("<td class='videoSubTitle'><a data-fancybox data-type='iframe' data-src=" + videos[n].url + "> -- </a></td>");
 
 							document.write("</tr><tr>");
-							document.write("<td class='videoSubTitle'><a data-fancybox data-type='iframe' data-src=" + videos[n].url + ">" + videos[n].condition + "</a></td>");
+							document.write("<td class='videoSubTitle'><p><a data-fancybox data-type='iframe' data-src=" + videos[n].url + ">" + videos[n].condition + "</a></p></td>");
 							document.write("</tr></table></td>");
 							n = n + 1;
 						}
