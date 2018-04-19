@@ -97,13 +97,13 @@
 							document.write("<td><a data-fancybox data-type='iframe' data-src=" + videos[n].url + "><img class='picture' src=" + videos[n].picture + "></a></td>");
 
 							document.write("</tr><tr>");
-							document.write("<td id='videoTitle'><p><a data-fancybox data-type='iframe' data-src=" + videos[n].url + ">" + videos[n].patient + "</a></p></td>");
+							document.write("<td><p><a id='videoTitle' data-fancybox data-type='iframe' data-src=" + videos[n].url + ">" + videos[n].patient + "</a></p></td>");
 
 							// document.write("</tr><tr>");
 							// document.write("<td class='videoSubTitle'><a data-fancybox data-type='iframe' data-src=" + videos[n].url + "> -- </a></td>");
 
 							document.write("</tr><tr>");
-							document.write("<td id='videoSubTitle'><p><a data-fancybox data-type='iframe' data-src=" + videos[n].url + ">" + videos[n].condition + "</a></p></td>");
+							document.write("<td><p><a id='videoSubTitle' data-fancybox data-type='iframe' data-src=" + videos[n].url + ">" + videos[n].condition + "</a></p></td>");
 							document.write("</tr></table></td>");
 							n = n + 1;
 						}
