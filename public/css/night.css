@@ -91,7 +91,7 @@ label {
     text-indent: -9999px;
     width: 50px;
     height: 25px;
-    background: #f1f1f1;
+    background: #f5f5f5;
     /*display: block;*/
     border-radius: 100px;
     position: relative;
@@ -150,7 +150,6 @@ td {
 }
 
 .videoTitle {
-    color: #f96816 !important;
     padding-top: 0.5em !important;
     cursor: pointer;
 }
@@ -159,10 +158,13 @@ a {text-decoration: none;}
 a:hover {text-decoration: none;}
 
 .videoSubTitle {
-    color: #337ab7;
     padding-top: 0em !important;
     cursor: pointer;
-    border-top: solid #337ab7 2px;
+    border-top: solid #444 2px;
+}
+
+#linkColor {
+    color: #444 !important;
 }
 
 @media (min-width: 1200px) {

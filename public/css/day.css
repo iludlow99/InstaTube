@@ -151,7 +151,6 @@ td {
 }
 
 #videoTitle {
-    color: #444 !important;
     padding-top: 0.5em !important;
     cursor: pointer; 
 }
@@ -160,10 +159,13 @@ a {text-decoration: none;}
 a:hover {text-decoration: none;}
 
 #videoSubTitle {
-    color: #444 !important;
     padding-top: 0em;
     cursor: pointer;
     border-top: solid #444 2px;
+}
+
+#linkColor {
+    color: #444 !important;
 }
 
 @media (min-width: 1200px) {
