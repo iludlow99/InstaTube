@@ -57,7 +57,7 @@ h2, h4, p {
     display: block;
     height: 4px;
     width: 0%;
-    background-color: #337ab7; 
+    background-color: #444; 
     transition: all ease-in-out 250ms;
     
 }
@@ -70,7 +70,7 @@ h2, h4, p {
     /*background-color: #fff;*/
     /*border-bottom: solid #337ab7 3.5px;*/
     text-decoration: none;
-    color: #337ab7;
+    color: #444;
 }
 
 /*======Day/Night Theme Button======*/
@@ -117,7 +117,7 @@ label:active:after {
     width: 32.5px;
 }
 
-// centering
+/* centering */
 body {
     display: flex;
     justify-content: center;
@@ -202,7 +202,7 @@ a:hover {text-decoration: none;}
 .videoLi::after {
     content: 'Julie Flygare: Narcolepsy';
     display: block;
-    color: #337ab7;
+    color: #444;
 }
 
 
