@@ -44,7 +44,7 @@
 			
 			
 			<ul class="navBarUl">
-				<li class="NavLi logo"><h2><strong class="logoColor">Med</strong>video</h2><a href=""><!-- <img class="logoPlaceHolder" src="./imgs/logoPlaceHolder.png"></a> --></li>
+				<li class="NavLi logo"><h2><strong class="logoColor">Med</strong>video</h2></li>
 				<li class="NavLi" style="float:right;"><input type="checkbox" id="switch" /><label for="switch" onclick="toggle()">Toggle</label></li>
 				
 				<!-- <li class="NavLi" style="float:right;"><a class="navLinks" href="contactPage.html"><h4>Contact</h4></a></li> -->
@@ -97,13 +97,13 @@
 							document.write("<td><a data-fancybox data-type='iframe' data-src=" + videos[n].url + "><img class='picture' src=" + videos[n].picture + "></a></td>");
 
 							document.write("</tr><tr>");
-							document.write("<td id='videoTitle'><p><a id='linkColor' data-fancybox data-type='iframe' data-src=" + videos[n].url + ">" + videos[n].patient + "</a></p></td>");
+							document.write("<td class='videoTitle'><p><a id='linkColor' data-fancybox data-type='iframe' data-src=" + videos[n].url + ">" + videos[n].patient + "</a></p></td>");
 
 							// document.write("</tr><tr>");
 							// document.write("<td class='videoSubTitle'><a data-fancybox data-type='iframe' data-src=" + videos[n].url + "> -- </a></td>");
 
 							document.write("</tr><tr>");
-							document.write("<td id='videoSubTitle'><p><a id='linkColor' data-fancybox data-type='iframe' data-src=" + videos[n].url + ">" + videos[n].condition + "</a></p></td>");
+							document.write("<td class='videoSubTitle'><p><a id='linkColor' data-fancybox data-type='iframe' data-src=" + videos[n].url + ">" + videos[n].condition + "</a></p></td>");
 							document.write("</tr></table></td>");
 							n = n + 1;
 						}
