@@ -3,12 +3,8 @@ body {
 
 }
 
-h4 {
+h2, h4, p {
     margin: 0px;
-}
-
-h2 {
-     margin: 0px;
 }
 
 
@@ -27,7 +23,6 @@ h2 {
     padding-right: 1.5%;
     overflow: hidden;
     background-color: #f5f5f5;
-    opacity: 0.96;
     text-decoration: none;
 }
 
@@ -93,7 +88,6 @@ label {
     width: 50px;
     height: 25px;
     background: #444444 !important;
-    /*display: block;*/
     border-radius: 100px;
     position: relative;
 }
@@ -105,7 +99,7 @@ label:after {
     left: 1.7px;
     width: 22.5px;
     height: 22.5px;
-    background: #f5f5f5;
+    background: #fff;
     border-radius: 90px;
     transition: 0.3s;
 }
@@ -128,7 +122,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 /*========================Video Grid=========================*/
@@ -150,16 +143,16 @@ td {
     text-align: center;
 }
 
-#videoTitle {
+.videoTitle {
     padding-top: 0.5em !important;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 a {text-decoration: none;}
 a:hover {text-decoration: none;}
 
-#videoSubTitle {
-    padding-top: 0em;
+.videoSubTitle {
+    padding-top: 0em !important;
     cursor: pointer;
     border-top: solid #444 2px;
 }
@@ -197,7 +190,7 @@ a:hover {text-decoration: none;}
 
 
 
-.videoLi {
+/* .videoLi {
     display: inline-block;
     text-align: center;
     margin: 4% 1%;
@@ -209,13 +202,7 @@ a:hover {text-decoration: none;}
     content: 'Julie Flygare: Narcolepsy';
     display: block;
     color: #444 !important;
-}
-
-
-
-.videoTable {
-    text-align: center;
-}
+} */
 
 
 /*========================Fancy Box=========================*/
